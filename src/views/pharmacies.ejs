@@ -1,0 +1,58 @@
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js" integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js" integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script>
+<!-- Geocoder-->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+
+<!-- Autocomplete-->
+<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+<script>
+    const {
+        autocomplete
+    } = window['@algolia/autocomplete-js'];
+    const {
+        getAlgoliaResults
+    } = window['@algolia/autocomplete-js'];
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-plugin-algolia-insights"></script>
+<script>
+    const {
+        createAlgoliaInsightsPlugin
+    } = window[
+        '@algolia/autocomplete-plugin-algolia-insights'
+    ];
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-plugin-query-suggestions"></script>
+<script>
+    const {
+        createQuerySuggestionsPlugin
+    } = window['@algolia/autocomplete-plugin-query-suggestions'];
+</script>
+
+<script>
+    var ALGOLIA_INSIGHTS_SRC = "https://cdn.jsdelivr.net/npm/search-insights@2.0.3";
+
+    ! function(e, a, t, n, s, i, c) {
+        e.AlgoliaAnalyticsObject = s, e[s] = e[s] || function() {
+                (e[s].queue = e[s].queue || []).push(arguments)
+            }, i = a.createElement(t), c = a.getElementsByTagName(t)[0],
+            i.async = 1, i.src = n, c.parentNode.insertBefore(i, c)
+    }(window, document, "script", ALGOLIA_INSIGHTS_SRC, "aa");
+</script>
+
+<!-- GraphQL-->
+
+
+
+<link rel="stylesheet" href="./assets/css/styles.css">
+<script type="module" src="./assets/js/script.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic" />
+
+
+
+<div id="map"></div>

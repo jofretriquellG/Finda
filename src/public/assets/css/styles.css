@@ -1,0 +1,38 @@
+.marker {
+    border: 5px solid #03c383;
+    height: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 10px;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.ais-SearchBox {
+    margin: 1em 0;
+}
+
+.ais-Pagination {
+    margin-top: 1em
+}
+
+.left-panel {
+    float: left;
+    width: 250px;
+}
+
+.right-panel {
+    margin-left: 260px;
+}
