@@ -36,3 +36,13 @@ body {
 .right-panel {
     margin-left: 260px;
 }
+
+.mapboxgl-popup-content {
+    background-color: #03c383;
+    color: white;
+}
+
+.mapboxgl-popup-close-button {
+    color: white;
+    font-size: 34px;
+}

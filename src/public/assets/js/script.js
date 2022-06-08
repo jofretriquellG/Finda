@@ -15,7 +15,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoiam9mcmV0cmlxdWVsbCIsImEiOiJjbDFraDIwY2UwMHI4M
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11'
-
 });
 //On load mapbox
 map.on('load', function() {
@@ -26,6 +25,8 @@ map.on('click', 'pharmacies', (e) => {
 
     // Copy coordinates array.
     const coordinates = e.features[0].geometry.coordinates.slice();
+    console.log(coordinates);
+    console.log("si");
     // Ensure that if the map is zoomed out such that multiple
     // copies of the feature are visible, the popup appears
     // over the copy being pointed to.
