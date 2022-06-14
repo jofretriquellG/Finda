@@ -3,7 +3,8 @@ import expressLayouts from 'express-ejs-layouts';
 import {gql,GraphQLClient} from 'graphql-request';
 import path from "path";
 import {webhook} from './controllers/webhook';
-
+import bodyParser from "body-parser";
+import json from './public/assets/json/mataro.json';
 const app = express();
 
 // EJS setup
@@ -11,7 +12,7 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
 // Body parser init
-var bodyParser = require('body-parser');
+
 app.use(bodyParser.json());
 
 // Setting the root path for views directory
@@ -31,7 +32,6 @@ app.post("/webhook", (req: Request, res: Response) => {
 })
 
 const url="https://api-eu-central-1.graphcms.com/v2/cl2u6114m0wbs01yzgitt7dxc/master";
-
 
 app.post("/graphcms",async (req: Request, res: Response) => {
 	
@@ -59,9 +59,6 @@ app.post("/graphcms",async (req: Request, res: Response) => {
 	  }
 	`;
 	const data =await graphQLClient.request(query);
-	console.log(data.pharmacies);
-	
-
 	res.status(200).send({pharmacies : data.pharmacies});
 })
 
@@ -74,37 +71,59 @@ app.get("/uploadcontent",async (req: Request, res: Response) => {
 			}
 		})
 
-		var json = require('D:/Documents/VisualStudio/Map/find-a-pharmacy/src/public/assets/json/mataro.json');	    
-		
-		json.forEach(element => {
-			var id = element.id;
-			console.log(id);
-			var type=element.type;
-			var geometryType=element.geometry.type;
-			var coordinates=element.geometry.coordinates;
-			var name=element.properties.name;
-			var postalCode=element.properties.postalCode;
-			var tel=element.properties.tel;
-			var city=element.properties.city;
-			var address=element.properties.address;
-	
+		json.forEach(async element => {
+
+			const id = element.id;
+			const type = element.type;
+			const geometryType = element.geometry.type;
+			const coordinates = element.geometry.coordinates;
+			const name = element.properties.name;
+			const postalCode = element.properties.postalCode;
+			const tel = element.properties.tel;
+			const city = element.properties.city;
+			const address = element.properties.address;
+
 			const query=gql`mutation {
 				createPharmacy(
 				data: {id_:${id}, type: "${type}", properties: {create: {name: "${name}", address: "${address}", city: "${city}", postalCode: "${postalCode}", tel: "${tel}"}}, geometry: {create: {type: "${geometryType}", coordinates: [${coordinates}]}}}
 				){
 					id
 				  }
+			}`;		
+
+			const existsDraft =gql`query {
+								pharmacies(
+									where: { id_:${id} },
+									stage: DRAFT
+									) {
+								id_
+								}
+							}`;
+
+			const existsPublished =gql`query {
+								pharmacies(
+									where: { id_:${id} },
+									stage: PUBLISHED
+									) {
+								id_
+								}
+							}`;
+
+			const resultDraft = await graphQLClient.request(existsDraft);
+			const resultPublished = await graphQLClient.request(existsPublished);
+
+			if( resultDraft.pharmacies.length == 0 && resultPublished.pharmacies.length == 0 ){
+
+				await graphQLClient.request(query);
 			}
-			`;			
-			return graphQLClient.request(query);		
+
 		});
 	}
 	try {
-		createContentEntry();
+		await createContentEntry();
 		res.sendStatus(201);
-	} catch (err) {
-		res.sendStatus(400);
-        console.log(err);
+	} catch (error) {
+		res.sendStatus(error);
 	}	
 })
 

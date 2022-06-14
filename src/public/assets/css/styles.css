@@ -44,5 +44,12 @@ body {
 
 .mapboxgl-popup-close-button {
     color: white;
-    font-size: 34px;
+    font-size: 26px;
+}
+
+.aa-Autocomplete {
+    width: 380px;
+}
+:root{
+    --aa-text-color-rgb: rgb(3, 195, 131);
 }

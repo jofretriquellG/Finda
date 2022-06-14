@@ -1,3 +1,14 @@
+//import mapboxgl from '../mapbox-gl/dist/mapbox-gl-csp';
+//import algoliasearch from './algoliasearch';
+//import { autocomplete,getAlgoliaResults } from './@algolia/autocomplete-js';
+//import { createQuerySuggestionsPlugin } from './@algolia/autocomplete-plugin-query-suggestions';
+
+//Mapbox init
+mapboxgl.accessToken = 'pk.eyJ1Ijoiam9mcmV0cmlxdWVsbCIsImEiOiJjbDFraDIwY2UwMHI4M3BwNXltdmFxcmxoIn0.epHk7taelkdTQfBaKVbqyw';
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+});
 //Print markers from GraphCMS query
 window.onload = () => {
     const url = "http://localhost:8080/graphcms";
@@ -10,37 +21,36 @@ window.onload = () => {
         })
 }
 
-//Mapbox init
-mapboxgl.accessToken = 'pk.eyJ1Ijoiam9mcmV0cmlxdWVsbCIsImEiOiJjbDFraDIwY2UwMHI4M3BwNXltdmFxcmxoIn0.epHk7taelkdTQfBaKVbqyw';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11'
-});
 //On load mapbox
 map.on('load', function() {
     map.setLayoutProperty("poi-label", 'visibility', 'none');
 });
 //On click 
+let popup;
 map.on('click', 'pharmacies', (e) => {
 
     // Copy coordinates array.
-    const coordinates = e.features[0].geometry.coordinates.slice();
-    console.log(coordinates);
-    console.log("si");
+    let coordinates = e.features[0].geometry.coordinates.slice();
+
     // Ensure that if the map is zoomed out such that multiple
     // copies of the feature are visible, the popup appears
-    // over the copy being pointed to.
     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
-    new mapboxgl.Popup()
-        .setLngLat(coordinates)
-        .setHTML(popup(e.features[0]))
-        .addTo(map);
+    popup = popupInit(coordinates, e.features[0]);
+
 });
 
 //Popup
-function popup(data) {
+function popupInit(coordinates, data) {
+    return new mapboxgl.Popup()
+        .setLngLat(coordinates)
+        .setHTML(popupInfo(data))
+        .addTo(map);
+
+}
+
+function popupInfo(data) {
 
     const name = data.properties.name;
     const address = data.properties.address;
@@ -83,28 +93,37 @@ function createSource(geojson, map) {
         }
     });
 }
-
 //JSON to GeoJSON
 function geoJSON(data) {
-
     return {
         type: "FeatureCollection",
         features: data
     }
 }
 
-
 // Algolia
-const apiKey = 'e46821fb7b2f2e5594aace8948470c1e';
+const apiKey = 'b388e0b552136717565c18ffd71199d5';
 const apiId = 'CD279WEMBF';
 const searchClient = algoliasearch(apiId, apiKey);
+
+
+//Autocomplete plugins
+const querySuggestionsPlugin = createQuerySuggestionsPlugin({
+    searchClient,
+    indexName: 'pharmacies',
+    getSearchParams() {
+        return {
+            hitsPerPage: 10,
+        };
+    },
+});
 
 //Autocomplete 
 autocomplete({
     container: '#autocomplete',
+    placeholder: 'Search pharmacies',
     openOnFocus: true,
     plugins: [],
-    debug: true,
     getSources() {
         return [{
             sourceId: 'querySuggestions',
@@ -124,18 +143,29 @@ autocomplete({
                 });
             },
             templates: {
-                item({ item, components }) {
+                item({ item, components, html }) {
+                    return html `<div>     
+                ${components.Highlight({
+                  hit: item,
+                  attribute: ['properties', 'address'],
+                    color:'#03c383'
+                })}
+            </div>`;
 
-                    return components.Highlight({ hit: item, attribute: ['properties', 'address'] });
                 },
             },
             onSelect({ item }) {
+                if (popup) {
+                    popup.remove();
+                }
+                let coordinates = item.geometry.coordinates;
                 map.flyTo({
                     center: item.geometry.coordinates,
                     essential: true,
                     zoom: 15
                 });
 
+                popup = popupInit(item.geometry.coordinates, item);
             },
         }, ];
     }

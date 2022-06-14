@@ -1,0 +1,347 @@
+ [{
+         "id": 1,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.432763313481572, 41.544095545894855]
+         },
+         "properties": {
+             "name": "C. GOMEZ DE LA PEÑA",
+             "postalCode": "08304",
+             "tel": "937995540",
+             "city": "mataro",
+             "address": "Via Europa, 92B, Mataró, España"
+         }
+     },
+     {
+         "id": 2,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.444165232866674, 41.53742189769952]
+         },
+         "properties": {
+             "name": "R. DE LA PEÑA VILLALAIN",
+             "postalCode": "08302",
+             "tel": "937902024",
+             "city": "mataro",
+             "address": "Carrer la Rambla, 16, Mataró, España"
+         }
+     },
+     {
+         "id": 3,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.443469069624087, 41.53376149862497]
+         },
+         "properties": {
+             "name": "A. PICORNELL SABATÉ",
+             "postalCode": "08302",
+             "tel": "938072216",
+             "city": "mataro",
+             "address": "Avinguda de Jaume Recoder, 62, Mataró, España"
+         }
+     },
+     {
+         "id": 4,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4444299815139368, 41.54000456435045]
+         },
+         "properties": {
+             "name": "M. MONTANER PICART",
+             "postalCode": "08302",
+             "tel": "937901030",
+             "city": "mataro",
+             "address": "Carrer de la Riera, 57, Mataró, España"
+         }
+     },
+     {
+         "id": 5,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4354557065253544, 41.53259123507846]
+         },
+         "properties": {
+             "name": "SPA",
+             "postalCode": "08302",
+             "tel": "937416262",
+             "city": "mataro",
+             "address": "Carrer Sant Valentí, 43, Mataró, España"
+         }
+     },
+     {
+         "id": 6,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.448668668648245, 41.54406848812272]
+         },
+         "properties": {
+             "name": "A. RUIZ-CARRILLO FITÉ",
+             "postalCode": "08301",
+             "tel": "937901517",
+             "city": "mataro",
+             "address": "Carrer Alarcón, 41, Mataró, España"
+         }
+     },
+     {
+         "id": 7,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4251872530607748, 41.53878040191307]
+         },
+         "properties": {
+             "name": "M. CLAVEL SUBIRANA",
+             "postalCode": "08303",
+             "tel": "937577054",
+             "city": "mataro",
+             "address": "Carrer del Rosselló, 43, Mataró, España"
+         }
+     },
+     {
+         "id": 8,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.45112479781353, 41.547551947011165]
+         },
+         "properties": {
+             "name": "M. VIA SOSA",
+             "postalCode": "08304",
+             "tel": "937901828",
+             "city": "mataro",
+             "address": "Carretera de Mata, 43, Mataró, España"
+         }
+     },
+     {
+         "id": 9,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.435051989974556, 41.54450191155722]
+         },
+         "properties": {
+             "name": "P. FARRÉ ALTARRIBA",
+             "postalCode": "08304",
+             "tel": "936386562",
+             "city": "mataro",
+             "address": "Carrer d'Esteve Albert, 43, Mataró, España"
+         }
+     },
+     {
+         "id": 10,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4466065191257464, 41.545862165387604]
+         },
+         "properties": {
+             "name": "F. GAMISANS LINARES",
+             "postalCode": "08304",
+             "tel": "933394355",
+             "city": "mataro",
+             "address": "Ronda d'Alfons X el Savi, 81, Mataró, España"
+         }
+     },
+     {
+         "id": 11,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4246131578312395, 41.536987047844555]
+         },
+         "properties": {
+             "name": "C. SUBIRANA CORONA",
+             "postalCode": "08303",
+             "tel": "937579093",
+             "city": "mataro",
+             "address": "Passeig de Ramon Berenguer III, 75, Mataró, España"
+         }
+     },
+     {
+         "id": 12,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4432320374753465, 41.5395307574858]
+         },
+         "properties": {
+             "name": "E. COLL FABRES",
+             "postalCode": "08302",
+             "tel": "937965058",
+             "city": "mataro",
+             "address": "Carrer de Sant Josep, 30, Mataró, España"
+         }
+     },
+     {
+         "id": 13,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4443311417583957, 41.54086344167011]
+         },
+         "properties": {
+             "name": "M. ROCA ALBERO",
+             "postalCode": "08301",
+             "tel": "937901957",
+             "city": "mataro",
+             "address": "Carrer Nou, 1, Mataró, España"
+         }
+     },
+     {
+         "id": 14,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4233103509322396, 41.54062706925685]
+         },
+         "properties": {
+             "name": "A. VILARDELL GARRIGA",
+             "postalCode": "08303",
+             "tel": "937982550",
+             "city": "mataro",
+             "address": "Avinguda de Puig i Cadafalch, 254, Mataró, España"
+         }
+     },
+     {
+         "id": 15,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4501190568423294, 41.55093193679231]
+         },
+         "properties": {
+             "name": "J. SUBIRATS COSTA",
+             "postalCode": "08304",
+             "tel": "937961721",
+             "city": "mataro",
+             "address": "Carrer Blai Parera, 35, Mataró, España"
+         }
+     },
+     {
+         "id": 16,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.429342394848312, 41.543319085877116]
+         },
+         "properties": {
+             "name": "M. RUIZ-CARRILLO FITE",
+             "postalCode": "08303",
+             "tel": "937985969",
+             "city": "mataro",
+             "address": "Ronda Roca Blanca, 1, Mataró, España"
+         }
+     },
+     {
+         "id": 17,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.440098889638675, 41.54050077878668]
+         },
+         "properties": {
+             "name": "S. VIDAL FERNANDEZ",
+             "postalCode": "08302",
+             "tel": "937987004",
+             "city": "mataro",
+             "address": "Carrer del Músic Jaume Isern, 1, Mataró, España"
+         }
+     },
+     {
+         "id": 18,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4436487064867323, 41.54507956128873]
+         },
+         "properties": {
+             "name": "M. CENTENO ORTEGA",
+             "postalCode": "08301",
+             "tel": "937961491",
+             "city": "mataro",
+             "address": "Ronda d'Alfons X el Savi, 18, Mataró, España"
+         }
+     },
+     {
+         "id": 19,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4382526542193967, 41.5326399324847]
+         },
+         "properties": {
+             "name": "M. CORONA COLLDEFORN",
+             "postalCode": "08302",
+             "tel": "937411666",
+             "city": "mataro",
+             "address": "Ronda President Macià, 1-3, Mataró, España"
+         }
+     },
+     {
+         "id": 20,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.447998405821885, 41.5476145018445]
+         },
+         "properties": {
+             "name": "COS - ALFONSO",
+             "postalCode": "08304",
+             "tel": "937903104",
+             "city": "mataro",
+             "address": "Av. de América, 33, Mataró, España"
+         }
+     },
+     {
+         "id": 21,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4527422219552384, 41.540702779549285]
+         },
+         "properties": {
+             "name": "C. YAÑEZ DEL RIO",
+             "postalCode": "08301",
+             "tel": "937904369",
+             "city": "mataro",
+             "address": "Camí Ral de la Mercè, 111, Mataró, España"
+         }
+     },
+     {
+         "id": 22,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.431471105949668, 41.53741223129572]
+         },
+         "properties": {
+             "name": "J. CORONA COLLDEFORN",
+             "postalCode": "08303",
+             "tel": "937579293",
+             "city": "mataro",
+             "address": "Ronda O'Donnell, 13, Mataró, España"
+         }
+     },
+     {
+         "id": 23,
+         "type": "Feature",
+         "geometry": {
+             "type": "Point",
+             "coordinates": [2.4367863976817508, 41.54841639573355]
+         },
+         "properties": {
+             "name": "MASJUAN",
+             "postalCode": "08304",
+             "tel": "937986915",
+             "city": "mataro",
+             "address": "Ronda Dr. Ferran, 28, Mataró, España"
+         }
+     }
+
+ ]
