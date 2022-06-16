@@ -14,6 +14,8 @@ export async function webhook(req, res) {
                     await index.saveObject(data1, {'autoGenerateObjectIDIfNotExist': true});
                 }
             });
+
+
         res.sendStatus(201);
     } catch (err) {
         res.status(400).send(err);

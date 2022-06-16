@@ -51,5 +51,26 @@ body {
     width: 380px;
 }
 :root{
-    --aa-text-color-rgb: rgb(3, 195, 131);
+    --aa-font-family: Helvetica;
+    --aa-selected-color-rgb: 3, 195, 131;
+    --aa-primary-color-rgb:3, 195, 131;
 }
+
+.mapboxgl-ctrl-top-left, .mapboxgl-ctrl {
+
+    width: calc(100% - 20px);
+}
+
+mark {
+    background-color: transparent !important;
+    font-weight: bold;
+}
+.aa-Item {
+    padding: 10px !important;
+}
+
+.aa-Item div {
+    line-height: 22px !important;
+}
+
+
