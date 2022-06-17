@@ -10,7 +10,35 @@
              "postalCode": "08304",
              "tel": "937995540",
              "city": "mataro",
-             "address": "Via Europa, 92B, Mataró, España"
+             "address": "Via Europa, 92B, Mataró, España",
+             "schedule": [
+                 {"monday": {
+                     "morning": ["9:00","14:00"],
+                     "afternoon": ["16:30","21:00"]
+                 }},
+                 {"tuesday": {
+                     "morning": ["9:00","14:00"],
+                     "afternoon": ["16:30","21:00"]
+                 }},
+                 {"wednesday": {
+                     "morning": ["9:00","14:00"],
+                     "afternoon": ["16:30","21:00"]
+                 }},
+                 {"thursday": {
+                     "morning": ["9:00","14:00"],
+                     "afternoon": ["16:30","21:00"]
+                 }},
+                 {"friday": {
+                     "morning": ["9:00","14:00"],
+                     "afternoon": ["16:30","21:00"]
+                 }},
+                 {"saturday": {
+                     "morning": ["9:00","14:00"]
+                 }},
+                 {"sunday": {
+
+                 }}
+             ]
          }
      },
      {
@@ -25,7 +53,16 @@
              "postalCode": "08302",
              "tel": "937902024",
              "city": "mataro",
-             "address": "Carrer la Rambla, 16, Mataró, España"
+             "address": "Carrer la Rambla, 16, Mataró, España",
+             "schedule": [
+                 {"monday": "8:00–22:00"},
+                 {"tuesday": "8:00–22:00"},
+                 {"wednesday": "8:00–22:00"},
+                 {"thursday": "8:00–22:00"},
+                 {"friday": "8:00–22:00"},
+                 {"saturday": "9:00–22:00"},
+                 {"sunday": "9:00–21:00"}
+             ]
          }
      },
      {
@@ -40,7 +77,16 @@
              "postalCode": "08302",
              "tel": "938072216",
              "city": "mataro",
-             "address": "Avinguda de Jaume Recoder, 62, Mataró, España"
+             "address": "Avinguda de Jaume Recoder, 62, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–21:00"},
+                 {"tuesday": "9:00–21:00"},
+                 {"wednesday": "9:00–21:00"},
+                 {"thursday": "9:00–21:00"},
+                 {"friday": "9:00–21:00"},
+                 {"saturday": "9:00–21:00"},
+                 {"sunday": "9:00–14:00"}
+             ]
          }
      },
      {
@@ -55,7 +101,16 @@
              "postalCode": "08302",
              "tel": "937901030",
              "city": "mataro",
-             "address": "Carrer de la Riera, 57, Mataró, España"
+             "address": "Carrer de la Riera, 57, Mataró, España",
+             "schedule": [
+                 {"monday": "8:00–21:00"},
+                 {"tuesday": "8:00–21:00"},
+                 {"wednesday": "8:00–21:00"},
+                 {"thursday": "8:00–21:00"},
+                 {"friday": "8:00–21:00"},
+                 {"saturday": "8:00–21:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -70,7 +125,16 @@
              "postalCode": "08302",
              "tel": "937416262",
              "city": "mataro",
-             "address": "Carrer Sant Valentí, 43, Mataró, España"
+             "address": "Carrer Sant Valentí, 43, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–13:30&16:30–20:30"},
+                 {"tuesday": "9:00–13:30&16:30–20:30"},
+                 {"wednesday": "9:00–13:30&16:30–20:30"},
+                 {"thursday": "9:00–13:30&16:30–20:30"},
+                 {"friday": "9:00–13:30&16:30–20:30"},
+                 {"saturday": "9:00–13:30"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -85,7 +149,16 @@
              "postalCode": "08301",
              "tel": "937901517",
              "city": "mataro",
-             "address": "Carrer Alarcón, 41, Mataró, España"
+             "address": "Carrer Alarcón, 41, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–14:00&16:30–20:30"},
+                 {"tuesday": "9:00–14:00&16:30–20:30"},
+                 {"wednesday": "9:00–14:00&16:30–20:30"},
+                 {"thursday": "9:00–14:00&16:30–20:30"},
+                 {"friday": "9:00–14:00&16:30–20:30"},
+                 {"saturday": "9:00–14:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -100,7 +173,16 @@
              "postalCode": "08303",
              "tel": "937577054",
              "city": "mataro",
-             "address": "Carrer del Rosselló, 43, Mataró, España"
+             "address": "Carrer del Rosselló, 43, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–13:30&16:30–20:30"},
+                 {"tuesday": "9:00–13:30&16:30–20:30"},
+                 {"wednesday": "9:00–13:30&16:30–20:30"},
+                 {"thursday": "9:00–13:30&16:30–20:30"},
+                 {"friday": "9:00–13:30&16:30–20:30"},
+                 {"saturday": "9:00–13:30"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -115,7 +197,16 @@
              "postalCode": "08304",
              "tel": "937901828",
              "city": "mataro",
-             "address": "Carretera de Mata, 43, Mataró, España"
+             "address": "Carretera de Mata, 43, Mataró, España",
+             "schedule": [
+                 {"monday": "8:00–21:00"},
+                 {"tuesday": "8:00–21:00"},
+                 {"wednesday": "8:00–21:00"},
+                 {"thursday": "8:00–21:00"},
+                 {"friday": "8:00–21:00"},
+                 {"saturday": "8:00–14:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -130,7 +221,16 @@
              "postalCode": "08304",
              "tel": "936386562",
              "city": "mataro",
-             "address": "Carrer d'Esteve Albert, 43, Mataró, España"
+             "address": "Carrer d'Esteve Albert, 43, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–14:00&16:30–21:00"},
+                 {"tuesday": "9:00–14:00&16:30–21:00"},
+                 {"wednesday": "9:00–14:00&16:30–21:00"},
+                 {"thursday": "9:00–14:00&16:30–21:00"},
+                 {"friday": "9:00–14:00&16:30–21:00"},
+                 {"saturday": "9:00–14:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -145,7 +245,16 @@
              "postalCode": "08304",
              "tel": "933394355",
              "city": "mataro",
-             "address": "Ronda d'Alfons X el Savi, 81, Mataró, España"
+             "address": "Ronda d'Alfons X el Savi, 81, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–20:30"},
+                 {"tuesday": "9:00–20:30"},
+                 {"wednesday": "9:00–20:30"},
+                 {"thursday": "9:00–20:30"},
+                 {"friday": "9:00–20:30"},
+                 {"saturday": "9:00–14:30"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -160,7 +269,16 @@
              "postalCode": "08303",
              "tel": "937579093",
              "city": "mataro",
-             "address": "Passeig de Ramon Berenguer III, 75, Mataró, España"
+             "address": "Passeig de Ramon Berenguer III, 75, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–20:30"},
+                 {"tuesday": "9:00–20:30"},
+                 {"wednesday": "9:00–20:30"},
+                 {"thursday": "9:00–20:30"},
+                 {"friday": "9:00–20:30"},
+                 {"saturday": "9:00–13:30"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -175,7 +293,16 @@
              "postalCode": "08302",
              "tel": "937965058",
              "city": "mataro",
-             "address": "Carrer de Sant Josep, 30, Mataró, España"
+             "address": "Carrer de Sant Josep, 30, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–21:00"},
+                 {"tuesday": "9:00–21:00"},
+                 {"wednesday": "9:00–21:00"},
+                 {"thursday": "9:00–21:00"},
+                 {"friday": "9:00–21:00"},
+                 {"saturday": "9:00–21:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -190,7 +317,16 @@
              "postalCode": "08301",
              "tel": "937901957",
              "city": "mataro",
-             "address": "Carrer Nou, 1, Mataró, España"
+             "address": "Carrer Nou, 1, Mataró, España",
+             "schedule": [
+                 {"monday": "8:30–20:30"},
+                 {"tuesday": "8:30–20:30"},
+                 {"wednesday": "8:30–20:30"},
+                 {"thursday": "8:30–20:30"},
+                 {"friday": "8:30–20:30"},
+                 {"saturday": "9:00–13:30&17:00–20:30"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -205,7 +341,16 @@
              "postalCode": "08303",
              "tel": "937982550",
              "city": "mataro",
-             "address": "Avinguda de Puig i Cadafalch, 254, Mataró, España"
+             "address": "Avinguda de Puig i Cadafalch, 254, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–13:30&16:30–20:30"},
+                 {"tuesday": "9:00–13:30&16:30–20:30"},
+                 {"wednesday": "9:00–13:30&16:30–20:30"},
+                 {"thursday": "9:00–13:30&16:30–20:30"},
+                 {"friday": "9:00–13:30&16:30–20:30"},
+                 {"saturday": "9:00–13:30"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -220,7 +365,16 @@
              "postalCode": "08304",
              "tel": "937961721",
              "city": "mataro",
-             "address": "Carrer Blai Parera, 35, Mataró, España"
+             "address": "Carrer Blai Parera, 35, Mataró, España",
+             "schedule": [
+                 {"monday": "8:00–22:00"},
+                 {"tuesday": "8:00–22:00"},
+                 {"wednesday": "8:00–22:00"},
+                 {"thursday": "8:00–22:00"},
+                 {"friday": "8:00–22:00"},
+                 {"saturday": "9:00–22:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -235,7 +389,16 @@
              "postalCode": "08303",
              "tel": "937985969",
              "city": "mataro",
-             "address": "Ronda Roca Blanca, 1, Mataró, España"
+             "address": "Ronda Roca Blanca, 1, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–20:30"},
+                 {"tuesday": "9:00–20:30"},
+                 {"wednesday": "9:00–20:30"},
+                 {"thursday": "9:00–20:30"},
+                 {"friday": "9:00–20:30"},
+                 {"saturday": "9:00–14:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -250,7 +413,16 @@
              "postalCode": "08302",
              "tel": "937987004",
              "city": "mataro",
-             "address": "Carrer del Músic Jaume Isern, 1, Mataró, España"
+             "address": "Carrer del Músic Jaume Isern, 1, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–21:00"},
+                 {"tuesday": "9:00–21:00"},
+                 {"wednesday": "9:00–21:00"},
+                 {"thursday": "9:00–21:00"},
+                 {"friday": "9:00–21:00"},
+                 {"saturday": "9:00–20:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -265,7 +437,16 @@
              "postalCode": "08301",
              "tel": "937961491",
              "city": "mataro",
-             "address": "Ronda d'Alfons X el Savi, 18, Mataró, España"
+             "address": "Ronda d'Alfons X el Savi, 18, Mataró, España",
+             "schedule": [
+                 {"monday": "8:30–22:00"},
+                 {"tuesday": "8:30–22:00"},
+                 {"wednesday": "8:30–22:00"},
+                 {"thursday": "8:30–22:00"},
+                 {"friday": "8:30–22:00"},
+                 {"saturday": "9:00–22:00"},
+                 {"sunday": "9:00–22:00"}
+             ]
          }
      },
      {
@@ -280,7 +461,16 @@
              "postalCode": "08302",
              "tel": "937411666",
              "city": "mataro",
-             "address": "Ronda President Macià, 1-3, Mataró, España"
+             "address": "Ronda President Macià, 1-3, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–21:00"},
+                 {"tuesday": "9:00–21:00"},
+                 {"wednesday": "9:00–21:00"},
+                 {"thursday": "9:00–21:00"},
+                 {"friday": "9:00–21:00"},
+                 {"saturday": "9:00–21:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -295,7 +485,16 @@
              "postalCode": "08304",
              "tel": "937903104",
              "city": "mataro",
-             "address": "Av. de América, 33, Mataró, España"
+             "address": "Av. de América, 33, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–21:00"},
+                 {"tuesday": "9:00–21:00"},
+                 {"wednesday": "9:00–21:00"},
+                 {"thursday": "9:00–21:00"},
+                 {"friday": "9:00–21:00"},
+                 {"saturday": "9:00–21:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -310,7 +509,16 @@
              "postalCode": "08301",
              "tel": "937904369",
              "city": "mataro",
-             "address": "Camí Ral de la Mercè, 111, Mataró, España"
+             "address": "Camí Ral de la Mercè, 111, Mataró, España",
+             "schedule": [
+                 {"monday": "8:30–20:30"},
+                 {"tuesday": "8:30–20:30"},
+                 {"wednesday": "8:30–20:30"},
+                 {"thursday": "8:30–20:30"},
+                 {"friday": "8:30–20:30"},
+                 {"saturday": "9:00–14:00"},
+                 {"sunday": "closed"}
+             ]
          }
      },
      {
@@ -325,7 +533,16 @@
              "postalCode": "08303",
              "tel": "937579293",
              "city": "mataro",
-             "address": "Ronda O'Donnell, 13, Mataró, España"
+             "address": "Ronda O'Donnell, 13, Mataró, España",
+             "schedule": [
+                 {"monday": "24h"},
+                 {"tuesday": "24h"},
+                 {"wednesday": "24h"},
+                 {"thursday": "24h"},
+                 {"friday": "24h"},
+                 {"saturday": "24h"},
+                 {"sunday": "24h"}
+             ]
          }
      },
      {
@@ -340,7 +557,16 @@
              "postalCode": "08304",
              "tel": "937986915",
              "city": "mataro",
-             "address": "Ronda Dr. Ferran, 28, Mataró, España"
+             "address": "Ronda Dr. Ferran, 28, Mataró, España",
+             "schedule": [
+                 {"monday": "9:00–13:30&16:30–20:30"},
+                 {"tuesday": "9:00–13:30&16:30–20:30"},
+                 {"wednesday": "9:00–13:30&16:30–20:30"},
+                 {"thursday": "9:00–13:30&16:30–20:30"},
+                 {"friday": "9:00–13:30&16:30–20:30"},
+                 {"saturday": "9:00–13:30"},
+                 {"sunday": "closed"}
+             ]
          }
      }
 

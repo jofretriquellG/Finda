@@ -58,7 +58,7 @@ body {
 
 .mapboxgl-ctrl-top-left, .mapboxgl-ctrl {
 
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
 }
 
 mark {
@@ -71,6 +71,29 @@ mark {
 
 .aa-Item div {
     line-height: 22px !important;
+}
+
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+    .aa-Autocomplete{
+        width: 100%;
+    }
+}
+
+
+.ctrl-map{
+    width: 200px;
+    height: 200px;
+    background-color: #03c383;
+}
+@media only screen and (max-width: 1023px) {
+    /* For mobile phones: */
+    .aa-Autocomplete{
+        width: 100%;
+    }
+    .mapboxgl-ctrl-top-right{
+        top: 551px;
+    }
 }
 
 

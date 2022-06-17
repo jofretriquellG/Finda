@@ -4,7 +4,7 @@ const algolia = algoliasearch('CD279WEMBF', 'b388e0b552136717565c18ffd71199d5');
 
 const index = algolia.initIndex('pharmacies');
 
-export async function webhook(req, res) {
+export function webhook(req, res) {
     if (req.method !== 'POST') return res.end();
     
     try {

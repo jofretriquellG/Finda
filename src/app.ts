@@ -50,7 +50,7 @@ app.post("/graphcms",async (req: Request, res: Response) => {
 		  }
 		  properties {
 			city
-      address
+      		address
 			name
 			postalCode
 			tel
@@ -71,7 +71,7 @@ app.get("/uploadcontent",async (req: Request, res: Response) => {
 			}
 		})
 
-		json.forEach(async element => {
+		json.forEach(element => {
 
 			const id = element.id;
 			const type = element.type;
@@ -109,14 +109,10 @@ app.get("/uploadcontent",async (req: Request, res: Response) => {
 								}
 							}`;
 
-			const resultDraft = await graphQLClient.request(existsDraft);
-			const resultPublished = await graphQLClient.request(existsPublished);
+			//const resultDraft = graphQLClient.request(existsDraft);
+			//const resultPublished = graphQLClient.request(existsPublished);
 
-			if( resultDraft.pharmacies.length == 0 && resultPublished.pharmacies.length == 0 ){
-
-				await graphQLClient.request(query);
-			}
-
+			graphQLClient.request(query);
 		});
 	}
 	try {

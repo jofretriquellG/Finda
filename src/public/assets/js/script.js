@@ -33,6 +33,9 @@ function initMap(lngLat,zoomSize) {
             })
         map.setLayoutProperty("poi-label", 'visibility', 'none');
         geolocate.trigger();
+
+
+
     });
 //On click
     let popup;
@@ -81,8 +84,19 @@ function initMap(lngLat,zoomSize) {
             return 'top-left'
         }
     };
+
+    let box=document.getElementById("map");
+    const mapbox = document.createElement('div');
+    mapbox.setAttribute('class','ctrl-map');
+    mapbox.setAttribute('id', 'personalized');
+    //box.appendChild(mapbox);
+    const controls=document.getElementsByClassName('mapboxgl-control-container');
+    controls[0].appendChild(mapbox);
+    console.log(controls);
+
+
 // eslint-disable-next-line no-undef
-    map.addControl(new mapboxgl.FullscreenControl({container: document.querySelector('body')}));
+    map.addControl(new mapboxgl.FullscreenControl());
     map.addControl(mapboxglSearchControl);
 // eslint-disable-next-line no-undef
     const geolocate=new mapboxgl.GeolocateControl({
@@ -93,7 +107,7 @@ function initMap(lngLat,zoomSize) {
         showUserHeading: true
     });
     map.addControl(geolocate);
-
+    map.addControl(new mapboxgl.NavigationControl());
 
 //Create mapbox source
     function createSource(geojson, map) {
@@ -201,4 +215,8 @@ function initMap(lngLat,zoomSize) {
             },];
         }
     });
+}
+
+function schedule(){
+
 }
