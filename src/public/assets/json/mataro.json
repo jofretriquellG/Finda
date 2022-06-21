@@ -1,54 +1,14 @@
- [{
-         "id": 1,
-         "type": "Feature",
-         "geometry": {
-             "type": "Point",
-             "coordinates": [2.432763313481572, 41.544095545894855]
-         },
-         "properties": {
-             "name": "C. GOMEZ DE LA PEÑA",
-             "postalCode": "08304",
-             "tel": "937995540",
-             "city": "mataro",
-             "address": "Via Europa, 92B, Mataró, España",
-             "schedule": [
-                 {"monday": {
-                     "morning": ["9:00","14:00"],
-                     "afternoon": ["16:30","21:00"]
-                 }},
-                 {"tuesday": {
-                     "morning": ["9:00","14:00"],
-                     "afternoon": ["16:30","21:00"]
-                 }},
-                 {"wednesday": {
-                     "morning": ["9:00","14:00"],
-                     "afternoon": ["16:30","21:00"]
-                 }},
-                 {"thursday": {
-                     "morning": ["9:00","14:00"],
-                     "afternoon": ["16:30","21:00"]
-                 }},
-                 {"friday": {
-                     "morning": ["9:00","14:00"],
-                     "afternoon": ["16:30","21:00"]
-                 }},
-                 {"saturday": {
-                     "morning": ["9:00","14:00"]
-                 }},
-                 {"sunday": {
-
-                 }}
-             ]
-         }
-     },
+ [
      {
-         "id": 2,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.444165232866674, 41.53742189769952]
          },
          "properties": {
+             "comAut": "Cataluña",
+             "cnn": "0908010054",
+             "caac": "F08001163",
              "name": "R. DE LA PEÑA VILLALAIN",
              "postalCode": "08302",
              "tel": "937902024",
@@ -66,13 +26,15 @@
          }
      },
      {
-         "id": 3,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.443469069624087, 41.53376149862497]
          },
          "properties": {
+             "cnn":"0908011411",
+             "caac": "F08015751",
+             "comAut": "Cataluña",
              "name": "A. PICORNELL SABATÉ",
              "postalCode": "08302",
              "tel": "938072216",
@@ -90,13 +52,15 @@
          }
      },
      {
-         "id": 4,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4444299815139368, 41.54000456435045]
          },
          "properties": {
+             "cnn":"0908010056",
+             "caac": "F08001188",
+             "comAut": "Cataluña",
              "name": "M. MONTANER PICART",
              "postalCode": "08302",
              "tel": "937901030",
@@ -114,61 +78,15 @@
          }
      },
      {
-         "id": 5,
-         "type": "Feature",
-         "geometry": {
-             "type": "Point",
-             "coordinates": [2.4354557065253544, 41.53259123507846]
-         },
-         "properties": {
-             "name": "SPA",
-             "postalCode": "08302",
-             "tel": "937416262",
-             "city": "mataro",
-             "address": "Carrer Sant Valentí, 43, Mataró, España",
-             "schedule": [
-                 {"monday": "9:00–13:30&16:30–20:30"},
-                 {"tuesday": "9:00–13:30&16:30–20:30"},
-                 {"wednesday": "9:00–13:30&16:30–20:30"},
-                 {"thursday": "9:00–13:30&16:30–20:30"},
-                 {"friday": "9:00–13:30&16:30–20:30"},
-                 {"saturday": "9:00–13:30"},
-                 {"sunday": "closed"}
-             ]
-         }
-     },
-     {
-         "id": 6,
-         "type": "Feature",
-         "geometry": {
-             "type": "Point",
-             "coordinates": [2.448668668648245, 41.54406848812272]
-         },
-         "properties": {
-             "name": "A. RUIZ-CARRILLO FITÉ",
-             "postalCode": "08301",
-             "tel": "937901517",
-             "city": "mataro",
-             "address": "Carrer Alarcón, 41, Mataró, España",
-             "schedule": [
-                 {"monday": "9:00–14:00&16:30–20:30"},
-                 {"tuesday": "9:00–14:00&16:30–20:30"},
-                 {"wednesday": "9:00–14:00&16:30–20:30"},
-                 {"thursday": "9:00–14:00&16:30–20:30"},
-                 {"friday": "9:00–14:00&16:30–20:30"},
-                 {"saturday": "9:00–14:00"},
-                 {"sunday": "closed"}
-             ]
-         }
-     },
-     {
-         "id": 7,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4251872530607748, 41.53878040191307]
          },
          "properties": {
+             "cnn":"0908012154",
+             "caac": "F08024259",
+             "comAut": "Cataluña",
              "name": "M. CLAVEL SUBIRANA",
              "postalCode": "08303",
              "tel": "937577054",
@@ -186,13 +104,15 @@
          }
      },
      {
-         "id": 8,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.45112479781353, 41.547551947011165]
          },
          "properties": {
+             "cnn":"0908012047",
+             "caac": "F08023103",
+             "comAut": "Cataluña",
              "name": "M. VIA SOSA",
              "postalCode": "08304",
              "tel": "937901828",
@@ -210,13 +130,15 @@
          }
      },
      {
-         "id": 9,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.435051989974556, 41.54450191155722]
          },
          "properties": {
+             "cnn":"0908012162",
+             "caac": "F08024347",
+             "comAut": "Cataluña",
              "name": "P. FARRÉ ALTARRIBA",
              "postalCode": "08304",
              "tel": "936386562",
@@ -234,13 +156,15 @@
          }
      },
      {
-         "id": 10,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4466065191257464, 41.545862165387604]
          },
          "properties": {
+             "cnn":"0908014661",
+             "caac": "F08730046",
+             "comAut": "Cataluña",
              "name": "F. GAMISANS LINARES",
              "postalCode": "08304",
              "tel": "933394355",
@@ -258,13 +182,15 @@
          }
      },
      {
-         "id": 11,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4246131578312395, 41.536987047844555]
          },
          "properties": {
+             "cnn":"0908011369",
+             "caac": "F08015328",
+             "comAut": "Cataluña",
              "name": "C. SUBIRANA CORONA",
              "postalCode": "08303",
              "tel": "937579093",
@@ -282,13 +208,15 @@
          }
      },
      {
-         "id": 12,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4432320374753465, 41.5395307574858]
          },
          "properties": {
+             "cnn":"0908010055",
+             "caac": "F08001170",
+             "comAut": "Cataluña",
              "name": "E. COLL FABRES",
              "postalCode": "08302",
              "tel": "937965058",
@@ -306,13 +234,15 @@
          }
      },
      {
-         "id": 13,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4443311417583957, 41.54086344167011]
          },
          "properties": {
+             "cnn":"0908010057",
+             "caac": "F08001195",
+             "comAut": "Cataluña",
              "name": "M. ROCA ALBERO",
              "postalCode": "08301",
              "tel": "937901957",
@@ -330,13 +260,15 @@
          }
      },
      {
-         "id": 14,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4233103509322396, 41.54062706925685]
          },
          "properties": {
+             "cnn":"0908010060",
+             "caac": "F08001220",
+             "comAut": "Cataluña",
              "name": "A. VILARDELL GARRIGA",
              "postalCode": "08303",
              "tel": "937982550",
@@ -354,13 +286,15 @@
          }
      },
      {
-         "id": 15,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4501190568423294, 41.55093193679231]
          },
          "properties": {
+             "cnn":"0908011639",
+             "caac": "F08018167",
+             "comAut": "Cataluña",
              "name": "J. SUBIRATS COSTA",
              "postalCode": "08304",
              "tel": "937961721",
@@ -378,13 +312,15 @@
          }
      },
      {
-         "id": 16,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.429342394848312, 41.543319085877116]
          },
          "properties": {
+             "cnn":"0908012047",
+             "caac": "F08023103",
+             "comAut": "Cataluña",
              "name": "M. RUIZ-CARRILLO FITE",
              "postalCode": "08303",
              "tel": "937985969",
@@ -402,13 +338,15 @@
          }
      },
      {
-         "id": 17,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.440098889638675, 41.54050077878668]
          },
          "properties": {
+             "cnn":"0908011000",
+             "caac": "F08011404",
+             "comAut": "Cataluña",
              "name": "S. VIDAL FERNANDEZ",
              "postalCode": "08302",
              "tel": "937987004",
@@ -426,13 +364,15 @@
          }
      },
      {
-         "id": 18,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4436487064867323, 41.54507956128873]
          },
          "properties": {
+             "cnn":"0908011730",
+             "caac": "F08019139",
+             "comAut": "Cataluña",
              "name": "M. CENTENO ORTEGA",
              "postalCode": "08301",
              "tel": "937961491",
@@ -450,61 +390,15 @@
          }
      },
      {
-         "id": 19,
-         "type": "Feature",
-         "geometry": {
-             "type": "Point",
-             "coordinates": [2.4382526542193967, 41.5326399324847]
-         },
-         "properties": {
-             "name": "M. CORONA COLLDEFORN",
-             "postalCode": "08302",
-             "tel": "937411666",
-             "city": "mataro",
-             "address": "Ronda President Macià, 1-3, Mataró, España",
-             "schedule": [
-                 {"monday": "9:00–21:00"},
-                 {"tuesday": "9:00–21:00"},
-                 {"wednesday": "9:00–21:00"},
-                 {"thursday": "9:00–21:00"},
-                 {"friday": "9:00–21:00"},
-                 {"saturday": "9:00–21:00"},
-                 {"sunday": "closed"}
-             ]
-         }
-     },
-     {
-         "id": 20,
-         "type": "Feature",
-         "geometry": {
-             "type": "Point",
-             "coordinates": [2.447998405821885, 41.5476145018445]
-         },
-         "properties": {
-             "name": "COS - ALFONSO",
-             "postalCode": "08304",
-             "tel": "937903104",
-             "city": "mataro",
-             "address": "Av. de América, 33, Mataró, España",
-             "schedule": [
-                 {"monday": "9:00–21:00"},
-                 {"tuesday": "9:00–21:00"},
-                 {"wednesday": "9:00–21:00"},
-                 {"thursday": "9:00–21:00"},
-                 {"friday": "9:00–21:00"},
-                 {"saturday": "9:00–21:00"},
-                 {"sunday": "closed"}
-             ]
-         }
-     },
-     {
-         "id": 21,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4527422219552384, 41.540702779549285]
          },
          "properties": {
+             "cnn":"0908011103",
+             "caac": "F08012486",
+             "comAut": "Cataluña",
              "name": "C. YAÑEZ DEL RIO",
              "postalCode": "08301",
              "tel": "937904369",
@@ -522,13 +416,15 @@
          }
      },
      {
-         "id": 22,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.431471105949668, 41.53741223129572]
          },
          "properties": {
+             "cnn":"0908011162",
+             "caac": "F08013112",
+             "comAut": "Cataluña",
              "name": "J. CORONA COLLDEFORN",
              "postalCode": "08303",
              "tel": "937579293",
@@ -546,13 +442,15 @@
          }
      },
      {
-         "id": 23,
          "type": "Feature",
          "geometry": {
              "type": "Point",
              "coordinates": [2.4367863976817508, 41.54841639573355]
          },
          "properties": {
+             "cnn":"0908011199",
+             "caac": "F08013507",
+             "comAut": "Cataluña",
              "name": "MASJUAN",
              "postalCode": "08304",
              "tel": "937986915",
