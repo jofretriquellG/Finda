@@ -12,30 +12,24 @@ if (permission.state=="granted") {
     initMap([ 12.325704152948152,50.12479049284618 ],3);
 }
 
-function initMap(lngLat,zoomSize) {
+
+function initMap(lngLat, zoomSize) {
     const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: lngLat,
-        zoom:zoomSize
+        zoom: zoomSize
     });
 
 //On load mapbox
-    map.on('load', function () {
-        const url = "http://localhost:8080/graphcms";
-        fetch(url, {
-            method: 'POST',
-            body: {query: ""}
-        }).then((response) => response.json())
+    map.on('load', async function () {
+        await fetch("http://localhost:8000/all")
+            .then((response) => response.json())
             .then((data) => {
-                createSource(geoJSON(data.pharmacies), map);
-
+                createSource(geoJSON(data.features), map);
             })
         map.setLayoutProperty("poi-label", 'visibility', 'none');
         geolocate.trigger();
-
-
-
     });
 //On click
     let popup;
@@ -85,21 +79,19 @@ function initMap(lngLat,zoomSize) {
         }
     };
 
-    let box=document.getElementById("map");
+    let box = document.getElementById("map");
     const mapbox = document.createElement('div');
-    mapbox.setAttribute('class','ctrl-map');
+    mapbox.setAttribute('class', 'ctrl-map');
     mapbox.setAttribute('id', 'personalized');
     //box.appendChild(mapbox);
-    const controls=document.getElementsByClassName('mapboxgl-control-container');
+    const controls = document.getElementsByClassName('mapboxgl-control-container');
     controls[0].appendChild(mapbox);
-    console.log(controls);
-
 
 // eslint-disable-next-line no-undef
     map.addControl(new mapboxgl.FullscreenControl());
     map.addControl(mapboxglSearchControl);
 // eslint-disable-next-line no-undef
-    const geolocate=new mapboxgl.GeolocateControl({
+    const geolocate = new mapboxgl.GeolocateControl({
         positionOptions: {
             enableHighAccuracy: true
         },
